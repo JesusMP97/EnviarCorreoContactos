@@ -41,7 +41,7 @@ public class Main2Activity extends AppCompatActivity {
         lim.setOrientation(GridLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(lim);
 
-        AdapterContactos adapter = new AdapterContactos(getListaContactos(this));
+        AdapterContactos adapter = new AdapterContactos(getListaContactos(this), this);
         recyclerView.setAdapter(adapter);
     }
 
